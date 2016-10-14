@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastramento com Bootstrap</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+
+  </head>
+  <body>
+
+  <h1>Sistema de Cadastramento de Alunos<small> Cadastrar Usuário</small></h1>
+
+  <form name="Cadastro" method="post" action="confirmabs.html">
+
+    <table>
+
+      <tr>
+        <td>Nome: <input type="text" name="nome" /> <br/><br/></td>
+        <td>Rua: <input type="text" name="rua"/><br/><br/></td>
+        <td>Número: <input type="text" name="numero" /><br><br></td>
+      </tr>
+
+      <tr>
+        <td>Complemento: <input type="text" name="complemento" /><br><br></td>
+        <td>CEP: <input type="text" name="cep" /><br><br></td>
+        <td>CPF: <input type="number" name="cpf" /><br><br></td>
+      </tr>
+
+      <tr>
+        <td>Telefone: <input type="text" name="telefone" /><br><br></td>
+        <td>Celular: <input type="text" name="celular" /><br><br></td>
+        <td>E-mail: <input type="text" name="email" /><br><br></td>
+      </tr>
+
+      <!-- Gênero  -->
+      <tr>
+        <td>Sexo: <input type="radio" name="genero" value="M">Masculino<br><br></td>
+        <td><input type="radio" name="genero" value="F">Feminino<br><br></td>
+      </tr>
+
+      <!-- Áreas de Interesse  -->
+      <tr>
+        <td>Áreas de Interesse: <input type="checkbox" name="area" />Sistemas Web <br/><br/></td>
+        <td><input type="checkbox" name="area" />Banco de Dados <br/><br/></td>
+        <td><input type="checkbox" name="area" />Redes de Computadores <br/><br/></td>
+        <td><input type="checkbox" name="area" />Engenharia de Software <br/><br/></td>
+      </tr>
+
+      <!-- Lista de Cidades  -->
+      <td>
+          Cidade: <select name="cidade">
+              <option value="1">João Monlevade</option>
+              <option value="2">Belo Horizonte</option>
+              <option value="3">Vitória</option>
+              <option value="4">Guarapari</option>
+              <option value="5">Rio de Janeiro</option>
+              <option value="6">Niterói</option>
+              <option value="7">São Paulo</option>
+              <option value="8">Bragança Paulista</option>
+          </select><br><br>
+        </td>
+
+      <!-- Lista de Estados  -->
+      <td>
+          Estado: <select name="estado">
+            <option value="1">Espírito Santo</option>
+            <option value="2">Minas Gerais</option>
+            <option value="3">Rio de Janeiro</option>
+            <option value="4">São Paulo</option>
+          </select><br><br>
+        </td>
+
+      <tr>
+        <td>Usuário: <input type="text" name="usuario" /><br/><br/></td>
+      </tr>
+
+      <tr>
+        <td>Senha: <input type="password" name="senha" /><br/><br/></td>
+        <td>Confirme sua Senha: <input type="password" name="senha" /><br/><br></td>
+      </tr>
+
+      <tr>
+        <td><input type="submit" class="btn btn-primary" value="Confirmar"><br/><br/></td>
+        <td><input type="reset" class="btn btn-danger" value="Limpar"><br/><br/></td>
+      </tr>
+
+    </table>
+  </form>
+
+  <form name="voltar" method="post" action="menubs.html">
+      Para voltar ao menu principal, clique em Voltar.<br>
+      <input type="submit" class="btn btn-warning" value="Voltar"/><br/><br/>
+  </form>
+
+  <div class="container text-center">
+      <div class="footer">
+          <hr>
+              <strong>Michel Wagner Ferreira - 13.1.8490</strong><br/>
+              Todos os direitos reservados &reg; <strong>Sistema de Cadastramento de Alunos</strong>
+          </hr>
+      </div>
+  </div>
+
+  </body>
+</html>
